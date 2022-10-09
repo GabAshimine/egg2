@@ -1,0 +1,21 @@
+Algoritmo sin_titulo
+	Definir frase, vocal Como Caracter
+	Escribir "Ingrese una frase"
+	Leer frase
+	cambio(frase)
+FinAlgoritmo
+SubProceso cambio(frase por referencia)
+	Definir i Como Entero
+	para i=0 hasta longitud(frase) Hacer
+		
+		segun Subcadena(frase, i, i) Hacer
+			"a": escribir sin saltar "@"
+			"e": escribir sin saltar "#"
+			"i": escribir sin saltar "$"
+			"o": escribir sin saltar "%"
+		    "u": Escribir sin saltar "*"
+			De otro modo:
+				Escribir sin saltar subcadena(frase, i, i)
+		FinSegun
+	FinPara
+FinSubProceso

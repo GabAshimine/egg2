@@ -1,0 +1,21 @@
+Algoritmo tornillos
+	definir defect,nodefect Como Entero
+	Escribir "ingrese la cantidad de tornillos sin defectos"
+	leer nodefect
+	Escribir "ingrese la cant de tornillos defectuosos"
+	leer defect
+	
+	Si defect<=200 y nodefect>=10000 Entonces
+		escribir "Eficiencia grado 8"
+	sino
+		si defect>=200 y nodefect>=10000 Entonces
+			escribir "Eficiencia grado 7"
+		SiNo
+			si defect<=200 y nodefect<=10000 Entonces
+				Escribir "Eficiencia grado 6"
+			SiNo
+				Escribir "Eficiencia grado 5"
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo

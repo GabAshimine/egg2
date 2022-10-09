@@ -1,0 +1,14 @@
+Algoritmo Sueldo
+	definir sueldo_Actual Como Real
+	definir sueldo_minimo Como Real
+	escribir "Ingrese su sueldo actual"
+	leer sueldo_Actual
+	escribir "Ingrese el sueldo minimo"
+	Leer sueldo_minimo
+	
+	si sueldo_Actual >= sueldo_minimo Entonces
+		Escribir  "Tu sueldo actual es mayor al sueldo minimo, felicidades"
+	FinSi
+	
+	
+FinAlgoritmo

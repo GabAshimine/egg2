@@ -1,0 +1,40 @@
+//Construir un programa que simule un menú de opciones para realizar las cuatro
+//operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+//numéricos enteros. El usuario, además, debe especificar la operación con el primer
+//carácter de la operación que desea realizar: ?S' o ?s? para la suma, ?R? o ?r? para la resta, ?M?
+	//o ?m? para la multiplicación y ?D? o ?d? para la división.
+
+Algoritmo ejercicio9
+	Definir op Como Caracter
+	Definir  suma, resta, multi, div Como Real
+	Definir num1, num2 Como Entero
+	
+	Escribir "Ingrese dos numeros enteros"
+	leer num1, num2
+	
+	Escribir "Ingrese operacion: " 
+	Escribir "- S: Si desea sumar"
+	Escribir "- R: Si desea restar"
+	Escribir "- M: Si desea multiplicar"
+	Escribir "- D: Si desea dividir"
+	
+	leer op
+	op = Mayusculas(op)
+	Segun op Hacer
+		"S":
+			suma  = num1 + num2
+			Escribir "La suma es: ", suma
+		"R":
+			resta  = num1 - num2
+			Escribir "La resta es: ", resta
+		"M":
+			multi  = num1 * num2
+			Escribir "La multiplicacion es: ", multi
+		"D":
+			div = num1 / num2
+			Escribir "La division es: ", div
+		De Otro Modo:
+			Escribir "Error no es una opcion valida"
+	Fin Segun
+	
+FinAlgoritmo

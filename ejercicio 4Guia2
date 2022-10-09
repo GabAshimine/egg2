@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	definir palabr como caracter 
+	escribir "escriba una palabra de seis caracteres:"
+	leer palabr
+	si Longitud(palabr)  = 6 Entonces
+		escribir "CORRECTO"
+	sino 
+		escribir "INCORRECTO"
+	FinSi
+	
+FinAlgoritmo

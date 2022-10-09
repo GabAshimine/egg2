@@ -1,0 +1,54 @@
+//Los empleados de una fábrica trabajan en dos turnos: Diurno y Nocturno. Se desea calcular el
+//jornal diario de acuerdo con las siguientes reglas:
+//	a) La tarifa de las horas diurnas es de $ 90
+//	b) La tarifa de las horas nocturnas es de $ 125
+//	c) En caso de ser feriado, la tarifa se incrementa en un 10% si el turno es diurno y en
+//		un 15% si el turno es nocturno.
+//			
+//		El programa debe solicitar la siguiente información al usuario: el nombre del trabajador, el día
+//		de la semana, el turno (diurno o nocturno) y la cantidad de horas trabajadas. Además,
+//		debemos preguntarle al usuario si el día de la semana (lunes, martes, miércoles, etc.) era
+//		festivo o no, para poder calcular el jornal diario. Utilice una función para realizar el cálculo.
+Funcion jornal <- JornalDiario ( turno,horas,dia,respuesta)
+	Definir jornal Como Real
+	
+	Si respuesta =  "Si" Entonces
+		Si turno="duirno" Entonces
+			jornal=horas*90*1.1
+		SiNo
+			Si turno="nocturno" Entonces
+				jornal=horas*125*1.15
+			Fin Si
+		Fin Si
+	
+	
+	SiNo
+		Si respuesta="NO" Entonces
+			Si turno="duirno" Entonces
+				jornal=horas*90
+			SiNo
+				Si turn="nocturno" Entonces
+					jornal=horas*125
+				Fin Si
+		
+			
+		Fin Si
+	Fin Si
+FinSi
+
+Fin Funcion
+
+Algoritmo sin_titulo
+	Definir nombre,dia,turno Como Caracter
+	Definir horas Como Real
+	Definir respuesta Como Caracter
+	Escribir "Ingrese el nombre del empleado,dia de la semana y turno"
+	Leer nombre
+	Leer dia
+	Leer turno
+	Escribir "Ingrese las horas trabajadas"
+	Leer horas
+	Escribir "El presente dia es feriado?"
+	Leer respuesta
+	Escribir "El jornal de ",nombre, " es de $",JornalDiario(turno,horas,dia,respuesta)
+FinAlgoritmo
